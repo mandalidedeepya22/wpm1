@@ -1,0 +1,210 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    {
+        "name": "Attach to Chrome",
+        "port": 9222,
+        "request": "attach",
+        "type": "chrome",
+        "webRoot": "${workspaceFolder}"
+    },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MY PROFILE</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+font-size: 16px; /* Increased font size */
+background-color: #f7f7f7;
+margin: 0;
+padding: 20px;
+display: flex;
+justify-content: center;
+}
+resume-container {
+width: 100%;
+max-width: 900px;
+background-color: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 12px rgb(51, 117, 134);
+}
+h1 {
+text-align: center;
+font-size: 24px;
+color: #333;
+text-transform: uppercase;
+margin-bottom: 30px;
+}
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 30px;
+}
+data {
+flex: 1;
+text-transform: uppercase;
+}
+data ul {
+list-style: none;
+padding: 0;
+margin: 0;
+line-height: 1.6;
+font-weight: bold;
+color: #333;
+}
+data ul li {
+margin-bottom: 10px;
+}
+header img {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+object-fit: cover;
+border: 3px solid #555;
+}
+h2, h3 {
+text-align: center;
+text-transform: uppercase;
+color: #333;
+margin: 20px 0 10px;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 10px;
+text-transform: uppercase;
+}
+th, td {
+border: 1px solid #ddd;
+
+padding: 10px;
+text-align: center;
+}
+th {
+background-color: #af534c;
+color: white;
+}
+achievements {
+margin-top: 30px;
+}
+achievements p {
+margin: 10px 0;
+}
+achievements a {
+color: #0037ff;
+text-decoration: none;
+font-weight: bold;
+}
+achievements a:hover {
+text-decoration: underline;
+}
+rating {
+margin-top: 30px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+font-weight: bold;
+text-transform: uppercase;
+}
+rating label {
+margin-bottom: 5px;
+}
+input[type="submit"] {
+display: block;
+margin: 30px auto 0;
+background-color: #af594c;
+color: white;
+border: none;
+padding: 12px 30px;
+font-size: 16px;
+border-radius: 8px;
+cursor: pointer;
+text-transform: uppercase;
+}
+input[type="submit"]:hover {
+background-color: #a05445;
+}
+</style>
+</head>
+<body>
+<div class="resume-container">
+<h1>Resume</h1>
+<header>
+<div class="data">
+<ul>
+<li>Mandali Durga Dedeepya</li>
+<li>Phone No: 9080306033</li>
+<li>Email: mandalidedeepya22@gmail.com</li>
+</ul>
+</div>
+<img
+src="https://t3.ftcdn.net/jpg/07/08/12/18/360_F_708121825_6YrMqPuC15djMJV1kLYTTGo0xT5V0NBK.jpg"
+alt="profile_picture">
+</header>
+<main>
+<h2>Education Details</h2>
+<table>
+<tr>
+<th>S.No</th>
+<th>Level of Education</th>
+<th>College Name</th>
+<th>Passed Year</th>
+<th>Percentage</th>
+
+</tr>
+<tr>
+<td>1</td>
+<td>SSC</td>
+<td>SRI CHAITANYA SCHOOL</td>
+<td>2021</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>2</td>
+<td>INTERMEDIATE</td>
+<td>SRI CHAITANYA JUNIOR KALASALA</td>
+<td>2023</td>
+<td>85%</td>
+</tr>
+</table>
+</main>
+<div class="achievements">
+<h3>Achievements</h3>
+<p>1. Infosys Springboard - JavaScript: <a href="#">CLICK HERE</a></p>
+<p>2. Infosys Springboard - HTML5: <a href="#">CLICK HERE</a></p>
+<p>3. Infosys Springboard - CSS3: <a href="#">CLICK HERE</a></p>
+</div>
+<div class="Rating">
+<label>Rating:</label>
+<label><input type="radio" name="rating" value="I"> 1</label>
+<label><input type="radio" name="rating" value="II"> 2</label>
+<label><input type="radio" name="rating" value="III"> 3</label>
+<label><input type="radio" name="rating" value="IV"> 4</label>
+<label><input type="radio" name="rating" value="V"> 5</label>
+</div>
+<input type="submit" value="Submit">
+</div>
+</body>
+</html>",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
